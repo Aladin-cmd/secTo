@@ -5,12 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the webapplication
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: master
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
-          target: "https://chatapp-kpp.herokuapp.com"
-          cmd_options: '-a'
+          target: 'https://chatapp-kpp.herokuapp.com'
