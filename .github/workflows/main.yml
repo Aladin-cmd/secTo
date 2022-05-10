@@ -8,4 +8,4 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
-          target: 'https://chatapp-kpp.herokuapp.com'
+          target: 'http://testphp.vulnweb.com'
