@@ -9,4 +9,5 @@ jobs:
         uses: zaproxy/action-baseline@v0.6.1
         with:
           token: ${{ secrets.OWASP1 }}
+          docker_name: 'owasp/zap2docker-stable'
           target: 'http://testphp.vulnweb.com'
