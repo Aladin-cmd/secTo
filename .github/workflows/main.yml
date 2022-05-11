@@ -8,5 +8,5 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
-          token: ${{ secrets.OWASP }}
+          token: ${{ secrets.OWASP1 }}
           target: 'http://testphp.vulnweb.com'
