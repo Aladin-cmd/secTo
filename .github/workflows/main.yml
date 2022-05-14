@@ -12,4 +12,4 @@ jobs:
         with:
           token: ${{ secrets.OWASP1 }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://stage.geoxanalitycs.com'
+          target: 'http://stage.geoxanalytics.com'
