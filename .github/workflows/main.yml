@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the webapplication
     steps:
+      - name: Add hosts to /etc/hosts
+        run:  sudo echo "18.116.72.222 stage.geoxanalytics.com" | sudo tee -a /etc/hosts
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
           token: ${{ secrets.OWASP1 }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://testphp.vulnweb.com'
+          target: 'http://stage.geoxanalitycs.com'
